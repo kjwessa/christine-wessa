@@ -1,8 +1,48 @@
-# React + Vite
+# Christine Wessa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## TL;DR
 
-Currently, two official plugins are available:
+The marketing site for speaker and musician Christine Wessa. With a heart for mothers, her ministry is focused on words of hope to those feeling lost in their vocation. The site will begin as a basic marketing website, and will evolve functionalities over time to include pricing, social proof, and multiple ways to book her. For Mother's everywhere, meet [Christine Wessa](https://www.christinewessa.com).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Live Link
+
+To access the live site, please [click here](https://www.christinewessa.com)
+
+## Roadmap
+
+The development journey for Christine Wessa is outlined as follows:
+
+### Initial Version:
+
+- A simple marketing page for Christine's work as a speaker & musician.
+- Addition of links to social media.
+- Addition of basic portfolio, images, and ways to book.
+
+### Beta Version:
+
+- Addition of screenshots to the README to visually represent the project's features.
+- Implementation of new functionalities based on user feedback.
+- Addition of upcoming events, static.
+- Addition of testimonials and social proof.
+- Addition of stats and an expanded bio.
+- Addition of more photography from [Kevin Wessa Photo](https://www.kevinwessaphoto.com)
+
+### Post-Beta Plans:
+
+- Continuous UI/UX improvements for an immersive user experience.
+- Addition of her talks with example content.
+- Addition of pricing pages and packages.
+- Rebuild the hero with a more interactive and engaging quote.
+- Entrance animations and scroll animations.
+- Rebuild the UI with Tailwind CSS.
+- Connect the events to Google Sheets so she can easily update upcoming events.
+- Addition of YouTube videos and other ways for users to see her work.
+- Addition of booking form.
+- Performance enhancements to ensure a smooth browsing experience for a growing audience.
+
+## Technologies Used
+
+This project is crafted with the following technologies:
+
+- **Vite:** For its fast build times and modern development experience.
+- **React:** For building a dynamic and responsive user interface.
