@@ -1,9 +1,11 @@
 import Header from "./Header";
+import Main from "./Main";
 
 function App() {
   return (
-    <div className="text-slate-900">
+    <div className="flex min-h-svh flex-col text-slate-900">
       <Header />
+      <Main />
     </div>
   );
 }
