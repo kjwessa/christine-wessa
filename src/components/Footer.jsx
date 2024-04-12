@@ -5,9 +5,14 @@ export default function Footer() {
   };
 
   return (
-    <footer>
-      <p>
+    <footer className="flex flex-col items-center gap-1 p-2">
+      <h2 className="text-lg">Christine Wessa</h2>
+      <p className="text-sm text-slate-600">
         © Copyright {getCurrentYear()} Christine Wessa. All rights reserved.
+        Site by{" "}
+        <a href="https://brewww.studio" className="font-bold">
+          Brewww Studio
+        </a>
       </p>
     </footer>
   );
