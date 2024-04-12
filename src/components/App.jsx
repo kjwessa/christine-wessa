@@ -2,7 +2,7 @@ import Header from "./Header";
 
 function App() {
   return (
-    <div className="">
+    <div className="text-slate-900">
       <Header />
     </div>
   );
