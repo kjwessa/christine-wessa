@@ -1,6 +1,6 @@
 import SocialIconsList from "./SocialIconsList";
 
-export default function Main() {
+function Main() {
   return (
     <section className="flex min-h-32 flex-grow flex-col items-center justify-center">
       <h2 className="text-5xl">Christine Wessa</h2>
@@ -14,3 +14,5 @@ export default function Main() {
     </section>
   );
 }
+
+export default Main;

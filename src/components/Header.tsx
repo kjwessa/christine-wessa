@@ -1,4 +1,4 @@
-export default function Header() {
+function Header() {
   return (
     <header className="align-center flex items-center justify-center py-3">
       <div>
@@ -10,3 +10,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;
