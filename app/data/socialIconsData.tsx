@@ -137,7 +137,7 @@ const socialIconsData = [
   {
     id: 5,
     name: "Email",
-    url: "mailto: ${NEXT_PUBLIC_EMAIL_ADDRESS}",
+    url: "mailto: ${process.env.NEXT_PUBLIC_EMAIL_ADDRESS}",
     svg: (
       <svg
         width="24px"
