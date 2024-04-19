@@ -34,7 +34,6 @@ The development journey for Christine Wessa is outlined as follows:
 - Addition of pricing pages and packages.
 - Rebuild the hero with a more interactive and engaging quote.
 - Entrance animations and scroll animations.
-- Rebuild the UI with Tailwind CSS.
 - Connect the events to Google Sheets so she can easily update upcoming events.
 - Addition of YouTube videos and other ways for users to see her work.
 - Addition of booking form.
@@ -44,7 +43,6 @@ The development journey for Christine Wessa is outlined as follows:
 
 This project is crafted with the following technologies:
 
-- **Vite**
-- **React**
+- **Next**
 - **Tailwind**
 - **TypeScript**
