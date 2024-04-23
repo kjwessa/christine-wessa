@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.christinewessa.com
+
+# Sitemaps
+Sitemap: https://www.christinewessa.com/sitemap.xml
