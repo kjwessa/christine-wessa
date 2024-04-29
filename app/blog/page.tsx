@@ -1,12 +1,14 @@
-import Header from "../components/Header";
-import BlogMain from "../components/BlogMain";
-import Footer from "../components/Footer";
+import BlogCard from "../components/BlogCard";
+
 export default function Blog() {
   return (
-    <div className="flex min-h-svh flex-col text-slate-800">
-      <Header />
-      <BlogMain />
-      <Footer />
-    </div>
+    <section className="m-auto flex min-h-32 max-w-6xl flex-grow flex-col items-center justify-center px-4">
+      <h2 className="mb-8 text-5xl">Blog</h2>
+      <div className="grid grid-cols-3 gap-4">
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+      </div>
+    </section>
   );
 }
