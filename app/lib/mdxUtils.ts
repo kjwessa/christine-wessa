@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 
 // Define the directory where MDX posts are stored
-const postsDirectory = path.join(process.cwd(), "posts");
+const postsDirectory = path.join(process.cwd(), "app/blog/posts");
 
 //* Function to get all posts with their metadata and content
 export const getPosts = () => {
