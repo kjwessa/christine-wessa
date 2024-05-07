@@ -8,7 +8,7 @@ interface BlogCardProps {
   image?: string;
 }
 
-function BlogCard({
+export function BlogCard({
   title,
   description,
   publishedAt,
@@ -33,5 +33,3 @@ function BlogCard({
     </div>
   );
 }
-
-export default BlogCard;

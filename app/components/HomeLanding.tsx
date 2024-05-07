@@ -1,6 +1,6 @@
-import SocialIconsList from "./SocialIconsList";
+import { SocialIconsList } from "./SocialIconsList";
 
-export default function HomeLanding() {
+export function HomeLanding() {
   return (
     <section className="flex flex-auto flex-col items-center justify-center">
       <h2 className="text-5xl">Christine Wessa</h2>

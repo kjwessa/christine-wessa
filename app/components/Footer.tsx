@@ -1,4 +1,4 @@
-function Footer() {
+export function Footer() {
   const getCurrentYear = (): number => {
     const year = new Date().getFullYear();
     return year;
@@ -17,5 +17,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

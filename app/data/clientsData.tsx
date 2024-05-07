@@ -1,4 +1,4 @@
-const clientsData = [
+export const clientsData = [
   {
     id: 1,
     name: "Maine Catholic Women's Conference",

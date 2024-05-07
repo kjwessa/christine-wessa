@@ -1,4 +1,4 @@
-const socialIconsData = [
+export const socialIconsData = [
   {
     id: 1,
     name: "Instagram",
