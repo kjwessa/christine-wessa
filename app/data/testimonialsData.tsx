@@ -1,4 +1,4 @@
-const testimonialsData = [
+export const testimonialsData = [
   {
     id: 1,
     person: "Fr. Mary Mary, CFR",

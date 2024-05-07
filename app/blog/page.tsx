@@ -1,4 +1,4 @@
-import BlogCard from "../components/BlogCard";
+import { BlogCard } from "../components/BlogCard";
 import Link from "next/link";
 import { getPosts } from "../lib/mdxUtils";
 
