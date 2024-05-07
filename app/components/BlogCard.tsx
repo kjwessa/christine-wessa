@@ -1,27 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BlogMetadata } from "../types/blogTypes";
 
-function BlogCard() {
+interface BlogCardProps {
+  title: string;
+  description: string;
+  publishedAt: string | number;
+  image?: string;
+}
+
+function BlogCard({
+  title,
+  description,
+  publishedAt,
+  image = "",
+}: BlogCardProps) {
   return (
     <div>
-      <Image
-        src="/images/blog/coffee-morning.jpg"
-        alt="Alt Text"
-        width={500}
-        height={300}
-      />
+      {image && <Image src={image} alt="Alt Text" width={500} height={300} />}
       <div className="flex-1">
-        <h3 className="my-2 text-xl font-bold">
-          The Lord doesn&apos;t need you. He wants you.
-        </h3>
-        <p className="mb-4 text-base text-gray-700">
-          Mass was insanely early, like 5:45 am, and I just thought someone
-          should&apos;ve canonized me right then and there for spending my free
-          day getting up before the sun to go to mass!
-        </p>
+        <h3 className="my-2 text-xl font-bold">{title}</h3>
+        <p className="mb-4 text-base text-gray-700">{description}</p>
         <p className="text-sm text-gray-500">
-          {new Date("2016-07-05").toLocaleDateString()}
+          {new Date(`${publishedAt}`).toLocaleDateString()}
         </p>
       </div>
       <Link

@@ -1,5 +1,4 @@
 import SocialIconsList from "./components/SocialIconsList";
-
 export default function Page() {
   return (
     <section className="flex flex-auto flex-col items-center justify-center">
