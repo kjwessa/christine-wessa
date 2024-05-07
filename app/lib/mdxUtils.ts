@@ -36,7 +36,7 @@ export const getSinglePost = async (slug: string) => {
   // Serialize the MDX content to be rendered on the client side
   const mdxSource = await serialize(content);
   return {
-    mdxSource, // Serialized MDX content
+    content: mdxSource, // Serialized MDX content
     ...data, // Spread the metadata
   };
 };
