@@ -12,17 +12,17 @@ const OverusedGrotesk = localFont({
   src: [
     {
       path: "./fonts/OverusedGrotesk-VF.woff2",
-      weight: "100",
+      weight: "400 500 700 900",
       style: "normal",
     },
     {
       path: "/fonts/OverusedGrotesk-VF.woff",
-      weight: "100",
+      weight: "400 500 700 900",
       style: "normal",
     },
     {
       path: "/fonts/OverusedGrotesk-VF.ttf",
-      weight: "100",
+      weight: "400 500 700 900",
       style: "normal",
     },
   ],
