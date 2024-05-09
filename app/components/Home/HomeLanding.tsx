@@ -1,4 +1,4 @@
-import { SocialIconsList } from "./SocialIconsList";
+import { SocialIconsList } from "../SocialIconsList";
 
 export function HomeLanding() {
   return (

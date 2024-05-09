@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         sans: [`var(--font-overused-grotesk), "ui-sans-serif", "system-ui"`],
       },
+      borderWidth: {
+        "1": "1px",
+      },
     },
   },
   plugins: [],
