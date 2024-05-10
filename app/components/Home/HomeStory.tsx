@@ -9,7 +9,7 @@ export function HomeStory() {
         <div className="p-2">
           <div className="relative min-h-[55dvh] overflow-hidden rounded-md">
             <Image
-              src="/images/christine-walking.jpg"
+              src="/images/christineWessa_pensacola_walking-on-pier.jpg"
               className="object-cover"
               alt="Christine Wessa walking across the street in Pensacola, FL"
               fill
