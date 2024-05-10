@@ -3,12 +3,13 @@ import Image from "next/image";
 export function HomeHero() {
   return (
     <section className="px-2">
-      <div className="relative flex min-h-[92dvh] flex-col items-center justify-center overflow-hidden rounded-md px-2">
+      <div className="relative flex min-h-[96dvh] flex-col items-center justify-center overflow-hidden rounded-md px-2">
         <Image
           src="/images/christine-walking.jpg"
-          layout="fill"
           className="object-cover"
           alt="Christine Wessa walking across the street in Pensacola, FL"
+          fill
+          priority
         />
         <div className="absolute left-0 top-0 z-10 max-w-xl p-4">
           <p className="text-5xl text-neutral-50">
