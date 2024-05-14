@@ -2,7 +2,7 @@ import { ContactForm } from "../ContactForm";
 
 export function HomeContact() {
   return (
-    <section className="border-b-1 border-slate-200 py-24">
+    <section className="border-b-1 border-slate-200 py-24" id="contact">
       <div className="mx-auto flex max-w-2xl flex-col gap-8 px-4">
         <div className="flex flex-col items-center gap-2 text-center">
           <h2 className="text-balance text-4xl">
@@ -13,7 +13,6 @@ export function HomeContact() {
             <span className="text-red-500">*</span>
           </p>
         </div>
-
         <ContactForm />
       </div>
     </section>
