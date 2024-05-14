@@ -11,7 +11,7 @@ export function ContactForm() {
         <div className="flex gap-4">
           <div className="flex-1">
             <label className="block text-sm font-medium text-slate-700">
-              First Name
+              First Name <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -23,7 +23,7 @@ export function ContactForm() {
           </div>
           <div className="flex-1">
             <label className="block text-sm font-medium text-slate-700">
-              Last Name
+              Last Name <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -36,7 +36,7 @@ export function ContactForm() {
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">
-            Contact Email
+            Contact Email <span className="text-red-500">*</span>
           </label>
           <input
             type="email"
@@ -60,7 +60,7 @@ export function ContactForm() {
         <div className="flex gap-4">
           <div className="flex-1">
             <label className="block text-sm font-medium text-slate-700">
-              Organization/Parish
+              Organization/Parish <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -72,7 +72,7 @@ export function ContactForm() {
           </div>
           <div className="flex-1">
             <label className="block text-sm font-medium text-slate-700">
-              Location
+              Location <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -85,7 +85,7 @@ export function ContactForm() {
         </div>
         <div>
           <label className="block text-sm font-medium text-slate-700">
-            Your Message
+            Your Message <span className="text-red-500">*</span>
           </label>
           <textarea
             name="entry.94188901"
