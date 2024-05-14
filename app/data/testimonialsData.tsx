@@ -1,8 +1,8 @@
 export const testimonialsData = [
   {
     id: 1,
-    person: "Fr. Mary Mary, CFR",
-    avatar: "",
+    name: "Fr. Mary-Mary Ames, CFR",
+    avatar: "https://i.pravatar.cc/150?img=5",
     role: "CFR Brooklyn",
     diocese: "",
     testimonial:
@@ -10,8 +10,8 @@ export const testimonialsData = [
   },
   {
     id: 2,
-    person: "Very Rev. Fr. John Phillip Knight, V.F.",
-    avatar: "",
+    name: "Very Rev. Fr. John Phillip Knight, V.F.",
+    avatar: "https://i.pravatar.cc/150?img=50",
     role: "Pastor of St. John Vianney",
     diocese: "Archdiocese of Atlanta",
     testimonial:
@@ -19,9 +19,9 @@ export const testimonialsData = [
   },
   {
     id: 3,
-    person: "Chez Filipini",
-    avatar: "",
-    role: "Director of the Office of Marriage and Family Life",
+    name: "Chez Filipini",
+    avatar: "https://i.pravatar.cc/150?img=20",
+    role: "Director of Marriage and Family Life",
     diocese: "Diocese of Pensacola-Tallahassee",
     testimonial:
       "Christine is a uniquely gifted worship leader whose demeanor and musical excellence work together to foster beautiful moments of prayerfully encountering the Lord Jesus. She is capable of encouraging this spirit with different age groups who might have varying levels of experience or comfort in retreat settings. She is a joy to work with and displays a servant's heart in every planning conversation and email exchange.",
