@@ -5,7 +5,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="flex flex-row flex-wrap justify-between gap-2 px-4 py-2">
+    <footer className="flex flex-row flex-wrap justify-center gap-2 px-4 py-2 md:justify-between">
       <h2 className="text-sm">
         © Copyright {getCurrentYear()} Christine Wessa. All rights reserved.
       </h2>
