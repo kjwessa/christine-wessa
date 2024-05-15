@@ -38,7 +38,7 @@ export const socialIconsData = [
   {
     id: 2,
     name: "Facebook",
-    url: "https://www.facebook.com/christinesimpson.wessa.7",
+    url: "https://www.facebook.com/christinewessa",
     svg: (
       <svg
         width="24px"
