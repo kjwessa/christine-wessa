@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${OverusedGrotesk.variable}`}>
-      <body className="bg-white text-slate-800 antialiased">
+      <body className="bg-gray-50 text-gray-800 antialiased">
         <main className="flex min-h-svh flex-col">
           <Navbar />
           {children}
