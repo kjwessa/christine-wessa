@@ -19,15 +19,15 @@ export function HomeStory() {
             />
           </div>
         </div>
-        <div className="mx-auto flex flex-col items-start justify-around gap-12 p-4 sm:max-w-lg">
-          <div className="flex flex-col items-start gap-4 sm:gap-3">
+        <div className="mx-auto flex flex-col items-start justify-around gap-12 p-4 text-start sm:max-w-lg sm:items-center sm:text-center md:items-start md:text-start">
+          <div className="flex flex-col items-start gap-4 sm:items-center sm:gap-3 md:items-start">
             <Eyebrow>My Story</Eyebrow>
             <h2 className="text-4xl">
               A wife and mother, I&apos;ve traveled for 8+ years to speak and
               lead worship.
             </h2>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-start gap-4 sm:items-center md:items-start">
             <p className="text-lg">
               I feel it my duty to authentically share my walk with God through
               every stage of life I&apos;m in to bring a hope to others that God

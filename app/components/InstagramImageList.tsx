@@ -2,7 +2,7 @@ import { InstagramImage } from "./InstagramImage";
 
 export function InstagramImageList() {
   return (
-    <div className="mx-auto grid w-full max-w-7xl grid-cols-2 gap-2 md:grid-cols-5">
+    <div className="mx-auto grid w-full max-w-4xl grid-cols-2 gap-2 sm:grid-cols-5">
       <InstagramImage
         src="/images/insta/IMG_4216.jpeg"
         alt="Kevin Wessa and Christine Simpson Wessa outside at Sacred Heart Cathedral in Pensacola, FL"
