@@ -3,7 +3,7 @@ interface EyebrowProps {
 }
 export function Eyebrow({ children }: EyebrowProps) {
   return (
-    <div className="inline-block w-auto rounded-full border-1 border-slate-200 px-3 py-1 text-center text-sm uppercase text-slate-800">
+    <div className="inline-block w-auto rounded-full border-1 border-gray-200 bg-gray-900 px-3 py-1 text-center text-sm uppercase tracking-wider text-gray-200">
       {children}
     </div>
   );
