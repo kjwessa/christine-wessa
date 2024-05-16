@@ -9,7 +9,7 @@ export function Footer() {
       <h2 className="text-sm">
         © Copyright {getCurrentYear()} Christine Wessa. All rights reserved.
       </h2>
-      <p className="text-sm text-slate-600">
+      <p className="text-sm text-gray-800">
         Made by{" "}
         <a href="https://brewww.studio" className="font-bold">
           Brewww Studio

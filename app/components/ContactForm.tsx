@@ -10,7 +10,7 @@ export function ContactForm() {
       >
         <div className="flex gap-4">
           <div className="flex-1">
-            <label className="block text-sm font-medium text-slate-700">
+            <label className="block text-sm font-medium text-gray-700">
               First Name <span className="text-red-500">*</span>
             </label>
             <input
@@ -22,7 +22,7 @@ export function ContactForm() {
             />
           </div>
           <div className="flex-1">
-            <label className="block text-sm font-medium text-slate-700">
+            <label className="block text-sm font-medium text-gray-700">
               Last Name <span className="text-red-500">*</span>
             </label>
             <input
@@ -35,7 +35,7 @@ export function ContactForm() {
           </div>
         </div>
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label className="block text-sm font-medium text-gray-700">
             Contact Email <span className="text-red-500">*</span>
           </label>
           <input
@@ -47,7 +47,7 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label className="block text-sm font-medium text-gray-700">
             Phone Number
           </label>
           <input
@@ -59,7 +59,7 @@ export function ContactForm() {
         </div>
         <div className="flex gap-4">
           <div className="flex-1">
-            <label className="block text-sm font-medium text-slate-700">
+            <label className="block text-sm font-medium text-gray-700">
               Organization/Parish <span className="text-red-500">*</span>
             </label>
             <input
@@ -71,7 +71,7 @@ export function ContactForm() {
             />
           </div>
           <div className="flex-1">
-            <label className="block text-sm font-medium text-slate-700">
+            <label className="block text-sm font-medium text-gray-700">
               Location <span className="text-red-500">*</span>
             </label>
             <input
@@ -84,7 +84,7 @@ export function ContactForm() {
           </div>
         </div>
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label className="block text-sm font-medium text-gray-700">
             Your Message <span className="text-red-500">*</span>
           </label>
           <textarea
@@ -97,7 +97,7 @@ export function ContactForm() {
         <button
           type="submit"
           value="Submit"
-          className="w-full rounded-md bg-gray-950 px-4 py-2 text-white hover:bg-gray-800"
+          className="w-full rounded-md bg-gray-900 px-4 py-2 text-white hover:bg-gray-800"
         >
           Send Message
         </button>
