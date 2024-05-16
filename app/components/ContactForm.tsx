@@ -21,7 +21,7 @@ export function ContactForm() {
           placeholder="Your Phone Number"
         />
         <input
-          type="text"
+          type="textarea"
           name="entry.94188901"
           placeholder="Your Message"
           required
