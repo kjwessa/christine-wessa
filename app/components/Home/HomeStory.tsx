@@ -10,9 +10,9 @@ export function HomeStory() {
           <div className="relative min-h-[55dvh] overflow-hidden rounded-md">
             <Image
               src="/images/christine-walking.jpg"
-              layout="fill"
               className="object-cover"
               alt="Christine Wessa walking across the street in Pensacola, FL"
+              fill
             />
           </div>
         </div>
