@@ -1,7 +1,7 @@
 export function ContactForm() {
   const formActionUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_ACTION_URL;
   return (
-    <div className="mx-auto max-w-4xl">
+    <div className="mx-auto w-full">
       <form
         action={formActionUrl}
         method="POST"
