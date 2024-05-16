@@ -4,7 +4,7 @@ import { SocialIconsList } from "../SocialIconsList";
 
 export function HomeStory() {
   return (
-    <section className="border-b-1 py-12">
+    <section className="border-b-1 py-12" id="about">
       <div className="grid grid-cols-2">
         <div className="p-2">
           <div className="relative min-h-[55dvh] overflow-hidden rounded-md">
