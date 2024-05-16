@@ -14,6 +14,7 @@ export function InstagramImageList() {
       <InstagramImage
         src="/images/christineWessa_pensacola_walking-across-street.jpg"
         alt=""
+        overlay={true}
       />
       <InstagramImage
         src="/images/christineWessa_pensacola_walking-across-street.jpg"

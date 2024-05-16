@@ -1,10 +1,11 @@
 import { ContactForm } from "../ContactForm";
-
+import { Eyebrow } from "../Eyebrow";
 export function HomeContact() {
   return (
     <section className="border-b-1 border-slate-200 py-24" id="contact">
       <div className="mx-auto flex max-w-2xl flex-col gap-8 px-4">
         <div className="flex flex-col items-center gap-2 text-center">
+          <Eyebrow>Contact Christine</Eyebrow>
           <h2 className="text-balance text-4xl">
             Fill out the form below and I will be in touch within 48 hrs.{" "}
           </h2>
