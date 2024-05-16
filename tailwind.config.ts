@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["OverusedGrotesk", "ui-sans-serif", "system-ui"],
+        sans: [`var(--font-overused-grotesk), "ui-sans-serif", "system-ui"`],
       },
     },
   },

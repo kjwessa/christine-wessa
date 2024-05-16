@@ -4,6 +4,29 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import localFont from "next/font/local";
+
+const OverusedGrotesk = localFont({
+  variable: "--font-overused-grotesk",
+  display: "swap",
+  src: [
+    {
+      path: "./fonts/OverusedGrotesk-VF.woff2",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "/fonts/OverusedGrotesk-VF.woff",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "/fonts/OverusedGrotesk-VF.ttf",
+      weight: "100",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Christine Wessa",
@@ -16,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${OverusedGrotesk.variable}`}>
       <body className="bg-white text-slate-800 antialiased">
         <main className="flex min-h-svh flex-col">
           <Header />
