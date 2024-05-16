@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function HomeHero() {
   return (
-    <section className="relative flex flex-auto flex-col items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-[92dvh] flex-col items-center justify-center overflow-hidden">
       <Image
         src="/images/christine-walking.jpg"
         layout="fill"
