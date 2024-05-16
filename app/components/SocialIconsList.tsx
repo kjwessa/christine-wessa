@@ -26,7 +26,7 @@ export function SocialIconsList({ filter }: SocialIconsListProps) {
   const sortedIcons = filteredIcons.sort((a, b) => a.id - b.id);
 
   return (
-    <div className="mb-2 flex gap-2 py-2">
+    <div className="mb-2 flex gap-4 py-2">
       {sortedIcons.map((icon: socialIconsData) => (
         <SocialIcon
           key={icon.id}
