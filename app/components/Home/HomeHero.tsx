@@ -5,7 +5,7 @@ export function HomeHero() {
     <section className="px-2">
       <div className="relative flex min-h-[96dvh] flex-col items-center justify-center overflow-hidden rounded-md px-2">
         <Image
-          src="/images/christine-walking.jpg"
+          src="/images/christineWessa_pensacola_walking-across-street.jpg"
           className="object-cover"
           alt="Christine Wessa walking across the street in Pensacola, FL"
           fill
