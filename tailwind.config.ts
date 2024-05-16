@@ -17,5 +17,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  safelist: ["border-green-500", "border-red-500"],
 };
 export default config;
