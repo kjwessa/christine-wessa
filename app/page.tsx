@@ -1,3 +1,4 @@
+import { HomeContact } from "./components/Home/HomeContact";
 import { HomeHero } from "./components/Home/HomeHero";
 import { HomeInstagram } from "./components/Home/HomeInstagram";
 import { HomeMission } from "./components/Home/HomeMission";
@@ -9,6 +10,7 @@ export default function Page() {
       <HomeHero />
       <HomeMission />
       <HomeStory />
+      <HomeContact />
       <HomeInstagram />
     </>
   );
