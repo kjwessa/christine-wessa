@@ -7,7 +7,7 @@ export function HomeStory() {
     <section className="border-b-1 py-12">
       <div className="grid grid-cols-2">
         <div className="p-2">
-          <div className="relative min-h-[65dvh] overflow-hidden rounded-md">
+          <div className="relative min-h-[55dvh] overflow-hidden rounded-md">
             <Image
               src="/images/christine-walking.jpg"
               layout="fill"
