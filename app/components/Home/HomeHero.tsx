@@ -1,11 +1,12 @@
 import Image from "next/image";
+import heroImg from "/public/images/christineWessa_pensacola_walking-across-street.jpg";
 
 export function HomeHero() {
   return (
     <section className="px-2">
       <div className="relative flex min-h-[92dvh] flex-col items-center justify-center overflow-hidden rounded-md px-2 sm:min-h-[95dvh] ">
         <Image
-          src="/images/christineWessa_pensacola_walking-across-street.jpg"
+          src={heroImg}
           className="object-cover"
           alt="Christine Wessa walking across the street in Pensacola, FL"
           fill
