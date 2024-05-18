@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImg from "/images/christineWessa_pensacola_walking-across-street.jpg";
+import heroImg from "/public/images/christineWessa_pensacola_walking-across-street.jpg";
 
 export function HomeHero() {
   return (
