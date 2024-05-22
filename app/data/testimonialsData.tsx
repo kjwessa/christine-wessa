@@ -26,4 +26,13 @@ export const testimonialsData = [
     testimonial:
       "Christine is a uniquely gifted worship leader whose demeanor and musical excellence work together to foster beautiful moments of prayerfully encountering the Lord Jesus. She is capable of encouraging this spirit with different age groups who might have varying levels of experience or comfort in retreat settings. She is a joy to work with and displays a servant's heart in every planning conversation and email exchange.",
   },
+  {
+    id: 4,
+    name: "Theresa Prejean",
+    avatar: "https://i.pravatar.cc/150?img=20",
+    role: "Director of Formation",
+    diocese: "Diocese of Pensacola-Tallahassee",
+    testimonial:
+      "I cannot say enough about Christine. We are eager to have her back for future events at our parish. She was incredibly easy to work with - flexible, accommodating, and professional. What she brought to our Woen's Retreat was pure gift: joy and true worship through her beautiful voice and music. Everyone loved her. My only regret was not allowing more time for Christine to sing and share her heart with us. Next time!",
+  },
 ];
