@@ -1,0 +1,58 @@
+export const albumData = [
+  {
+    id: 1,
+    artist: "His Own",
+    name: "Nothing Can Separate Us",
+    releaseYear: 2016,
+    releaseDate: "June 20, 2016",
+    spotify:
+      "https://open.spotify.com/album/6OgsbwhWJwAaAmp8PnUy7V?si=E24jgJmhRvKAnTB7FcDiPw",
+    apple: "",
+    artwork: "",
+    length: "4 min 36 sec",
+    type: "Single",
+    songs: 1,
+  },
+  {
+    id: 2,
+    artist: "His Own",
+    name: "It's You",
+    releaseYear: 2017,
+    releaseDate: "March 17, 2017",
+    spotify:
+      "https://open.spotify.com/album/6a2PZDfaTxBN5WtFf7c5s2?si=d_IA9lltTheHOr9EOhPwTg",
+    apple: "",
+    artwork: "",
+    length: "28 min 48 sec",
+    type: "EP",
+    songs: 7,
+  },
+  {
+    id: 3,
+    name: "The Divine Mercy Chaplet",
+    releaseYear: 2018,
+    artist: "His Own",
+    releaseDate: "March 30, 2018",
+    spotify:
+      "https://open.spotify.com/album/19T2YqHGYyk0FgwPUkcZcz?si=4E_Ww1UDQ8CJldVtRQ30dw",
+    apple: "",
+    artwork: "",
+    length: "16 min 2 sec",
+    type: "Single",
+    songs: 1,
+  },
+  {
+    id: 4,
+    artist: "His Own",
+    name: "O My Soul Awake",
+    releaseYear: 2019,
+    releaseDate: "October 18, 2019",
+    spotify:
+      "https://open.spotify.com/album/7svgmLDCWTQsRskQtAWokD?si=n4UFJM2TTa2mE2w76QPqhg",
+    apple: "",
+    artwork: "",
+    length: "26 min 21 sec",
+    type: "EP",
+    songs: 6,
+  },
+];
