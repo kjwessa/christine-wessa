@@ -1,4 +1,4 @@
-import { ContactHero } from "../components/Contact/ContactHero";
+import { ContactHero } from "../components/ContactHero";
 import { FooterInstagram } from "../components/FooterInstagram";
 import type { Metadata } from "next";
 

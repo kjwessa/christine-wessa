@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://www.christinewessa.com</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.christinewessa.com/contact-christine</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/contact-christine</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
 <url><loc>https://www.christinewessa.com/blog</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/7-practical-tips-for-dating</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/an-open-letter-to-a-porn-addict</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/attraction-is-a-good-thing</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/can-we-really-live-in-this-world-but-not-of-it</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/eve-i-feel-your-pain</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/god-is-moving</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/how-to-end-a-date</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/i-thought-i-knew</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/if-you-remain-silent</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/let-yourself-be-seen</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/little-did-i-know</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/love-anyway</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/love-in-the-ordinary</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/new-year-new-you</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/offer-it-up</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/red-flags-in-dating</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/the-beauty-of-conflict</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/the-lord-doesn&apos;t-need-you</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/the-one-thing-the-camino-was-not</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.christinewessa.com/blog/will-i-ever-be-enough</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

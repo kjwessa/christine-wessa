@@ -1,8 +1,8 @@
-import { ContactForm } from "../ContactForm";
+import { ContactForm } from "./ContactForm";
 import Image from "next/image";
 import contactImg from "/public/images/christineWessa_pensacola_walking-across-street.jpg";
-import { Eyebrow } from "../Eyebrow";
-import { ImageStamp } from "../ImageStamp";
+import { Eyebrow } from "./Eyebrow";
+import { ImageStamp } from "./ImageStamp";
 
 export function ContactHero() {
   return (
