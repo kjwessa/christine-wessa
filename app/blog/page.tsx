@@ -2,6 +2,13 @@ import { BlogCard } from "../components/BlogCard";
 import Link from "next/link";
 import { getPosts } from "../lib/mdxUtils";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Christine Wessa - Blog",
+  description: "See the latest posts from Christine Wessa.",
+};
+
 type Post = {
   slug: string;
   data: {
