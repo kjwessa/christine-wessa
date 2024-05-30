@@ -1,11 +1,7 @@
-// import { BlogCard } from "../components/BlogCard";
-
-// import { getPosts } from "../lib/mdxUtils";
+import { BlogCard } from "../components/BlogCard";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Link from "next/link";
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,44 +9,46 @@ export const metadata: Metadata = {
   description: "See the latest posts from Christine Wessa.",
 };
 
-type Post = {
+interface PostMeta {
+  title: string;
+  publishedAt: string;
+  description: string;
+  author: string;
+}
+
+interface Post {
   slug: string;
-  data: {
-    title: string;
-    publishedAt: string;
-    description: string;
-    author: string;
-  };
-};
+  meta: PostMeta;
+}
 
-type BlogProps = {
-  posts: Post[];
-};
-
-// Set the location of the blog directory
+//* Set the location of the posts directory
 const postsDirectory = path.join(process.cwd(), "posts");
-// Find all the files in the blog directory
-const files = fs.readdirSync(path.join(postsDirectory));
 
-// console.log(files);
+//* Find all the files in the blog directory
+const files = fs.readdirSync(path.join("posts"));
 
-// For each blog found
-const posts = files.map((filename) => {
+//* Map over each post, extract the frontMatter and adjust the slug
+const posts: Post[] = files.map((filename) => {
   // Read the content of each post
   const postContent = fs.readFileSync(
     path.join(postsDirectory, filename),
     "utf-8",
   );
-  // console.log(postContent);
-  //Extract the metadata
+  // Extract the frontMatter from each post
   const { data: frontMatter } = matter(postContent);
+  // Ensure the frontMatter has the correct structure
+  const meta: PostMeta = {
+    title: frontMatter.title,
+    publishedAt: frontMatter.publishedAt,
+    description: frontMatter.description,
+    author: frontMatter.author,
+  };
+  // Return the result
   return {
-    meta: frontMatter,
+    meta,
     slug: filename.replace(/^\d{4}-\d{2}-\d{2}\./, "").replace(".mdx", ""),
   };
 });
-
-// console.log(posts);
 
 export default function Blog() {
   return (
@@ -58,32 +56,15 @@ export default function Blog() {
       <h2 className="mb-8 text-5xl">Blog</h2>
       <div className="grid grid-cols-3 gap-4">
         {posts.map((post) => (
-          <div key={post.meta.title}>
-            <div>{post.meta.title}</div>
-            <p>{`/blog/` + post.slug}</p>
-          </div>
+          <BlogCard
+            key={post.meta.title}
+            title={post.meta.title}
+            publishedAt={post.meta.publishedAt}
+            description={post.meta.description}
+            slug={post.slug}
+          />
         ))}
       </div>
     </section>
   );
 }
-
-// export default function Blog() {
-//   const posts = getPosts();
-//   console.log(posts);
-//   return (
-//     <section className="m-auto flex min-h-32 max-w-6xl flex-grow flex-col items-center justify-center px-4">
-//       <h2 className="mb-8 text-5xl">Blog</h2>
-//       <div className="grid grid-cols-3 gap-4">
-//         {posts.map((post) => (
-//           <BlogCard
-//             key={post.data.title}
-//             title={post.data.title}
-//             publishedAt={post.data.publishedAt}
-//             description={post.data.description}
-//           />
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }

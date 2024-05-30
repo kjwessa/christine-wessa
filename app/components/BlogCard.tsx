@@ -6,6 +6,7 @@ interface BlogCardProps {
   description: string;
   publishedAt: string | number;
   image?: string;
+  slug: string;
 }
 
 export function BlogCard({
@@ -13,6 +14,7 @@ export function BlogCard({
   description,
   publishedAt,
   image = "",
+  slug,
 }: BlogCardProps) {
   return (
     <div>
@@ -25,7 +27,7 @@ export function BlogCard({
         </p>
       </div>
       <Link
-        href={"posts/post-slug"}
+        href={`blog/${slug}`}
         className="text-indigo-600 hover:text-indigo-900"
       >
         Read More
