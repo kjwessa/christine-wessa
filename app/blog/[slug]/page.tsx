@@ -2,13 +2,17 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { error } from "console";
 
 // Returns the content of the post with the matching slug
 async function getPost({ slug }: { slug: string }) {
-  const markdownFile = fs.readFileSync(
-    path.join("posts", slug + ".mdx"),
-    "utf-8",
-  );
+  const files = fs.readdirSync(path.join("posts"));
+  const filename = files.find((file) => file.includes(slug));
+  if (!filename) {
+    throw new Error(`File for slug ${slug} not found.`);
+  }
+
+  const markdownFile = fs.readFileSync(path.join("posts", filename), "utf-8");
 
   const { data: frontMatter, content } = matter(markdownFile);
   return { frontMatter, slug, content };
@@ -18,7 +22,7 @@ async function getPost({ slug }: { slug: string }) {
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("posts"));
   const params = files.map((filename) => ({
-    slug: filename.replace(".mdx", ""),
+    slug: filename.replace(/^\d{4}-\d{2}-\d{2}\./, "").replace(".mdx", ""),
   }));
 
   return params;

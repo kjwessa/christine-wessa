@@ -46,7 +46,7 @@ const posts = files.map((filename) => {
   const { data: frontMatter } = matter(postContent);
   return {
     meta: frontMatter,
-    slug: filename.replace(".mdx", ""),
+    slug: filename.replace(/^\d{4}-\d{2}-\d{2}\./, "").replace(".mdx", ""),
   };
 });
 
