@@ -1,8 +1,8 @@
-import { HomeContact } from "./components/Home/HomeContact";
-import { HomeHero } from "./components/Home/HomeHero";
-import { FooterInstagram } from "./components/FooterInstagram";
-import { HomeMission } from "./components/Home/HomeMission";
-import { HomeStory } from "./components/Home/HomeStory";
+import { HomeHero } from "./home/HomeHero";
+import { HomeMission } from "./home/HomeMission";
+import { HomeStory } from "./home/HomeStory";
+import { HomeContact } from "./home/HomeContact";
+import { FooterInstagram } from "@/components/FooterInstagram";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

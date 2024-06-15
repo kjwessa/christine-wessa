@@ -1,8 +1,8 @@
-import { BlogCard } from "../components/BlogCard";
+import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import type { Metadata } from "next";
+import { BlogCard } from "@/components/BlogCard";
 
 export const metadata: Metadata = {
   title: "Christine Wessa - Blog",

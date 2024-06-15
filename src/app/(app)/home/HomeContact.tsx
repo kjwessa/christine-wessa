@@ -1,5 +1,5 @@
-import { ContactForm } from "../ContactForm";
-import { Eyebrow } from "../Eyebrow";
+import { ContactForm } from "@/components/ContactForm";
+import { Eyebrow } from "@/components/Eyebrow";
 export function HomeContact() {
   return (
     <section className="border-b-1 border-gray-200 py-12 sm:py-24" id="contact">

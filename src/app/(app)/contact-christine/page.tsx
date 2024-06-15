@@ -1,6 +1,6 @@
-import { ContactHero } from "../components/ContactHero";
-import { FooterInstagram } from "../components/FooterInstagram";
 import type { Metadata } from "next";
+import { ContactHero } from "./ContactHero";
+import { FooterInstagram } from "@/components/FooterInstagram";
 
 export const metadata: Metadata = {
   title: "Contact Christine Wessa",

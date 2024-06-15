@@ -1,4 +1,4 @@
-import { Eyebrow } from "../Eyebrow";
+import { Eyebrow } from "@/components/Eyebrow";
 
 export function HomeMission() {
   return (
