@@ -1,6 +1,6 @@
-import { Eyebrow } from "../Eyebrow";
 import Image from "next/image";
-import { SocialIconsList } from "../SocialIconsList";
+import { Eyebrow } from "@/components/Eyebrow";
+import { SocialIconsList } from "@/components/SocialIconsList";
 
 export function HomeStory() {
   return (

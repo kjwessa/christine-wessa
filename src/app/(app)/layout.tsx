@@ -1,27 +1,27 @@
-import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import "./globals.css";
-import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
+import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import "./globals.css";
 
 const OverusedGrotesk = localFont({
   variable: "--font-overused-grotesk",
   display: "swap",
   src: [
     {
-      path: "./fonts/OverusedGrotesk-VF.woff2",
+      path: "../fonts/OverusedGrotesk-VF.woff2",
       weight: "400 500 700 900",
       style: "normal",
     },
     {
-      path: "/fonts/OverusedGrotesk-VF.woff",
+      path: "../fonts/OverusedGrotesk-VF.woff",
       weight: "400 500 700 900",
       style: "normal",
     },
     {
-      path: "/fonts/OverusedGrotesk-VF.ttf",
+      path: "../fonts/OverusedGrotesk-VF.ttf",
       weight: "400 500 700 900",
       style: "normal",
     },

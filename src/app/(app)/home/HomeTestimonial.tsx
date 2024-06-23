@@ -1,4 +1,4 @@
-import { TestimonialList } from "../TestimonialList";
+import { TestimonialList } from "@/components/TestimonialList";
 export function HomeTestimonial() {
   return (
     <section className="border-b-1 border-gray-200 py-12">
