@@ -1,5 +1,5 @@
 import { TestimonialCard } from "./TestimonialCard";
-import { testimonialsData } from "../data/testimonialsData";
+import { testimonialsData } from "@/data/testimonialsData";
 
 type testimonialsDataProps = {
   id: number;

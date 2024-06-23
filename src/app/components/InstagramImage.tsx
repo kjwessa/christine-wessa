@@ -1,5 +1,5 @@
 import Image from "next/image";
-import socialIconsData from "../data/socialIconsData";
+import socialIconsData from "@/data/socialIconsData";
 import Link from "next/link";
 
 interface InstagramImageProps {
