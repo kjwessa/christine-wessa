@@ -10,11 +10,7 @@ export default function Blog() {
   return (
     <section className="m-auto flex min-h-32 max-w-6xl flex-grow flex-col items-center justify-center px-4">
       <h2 className="mb-8 text-5xl">Blog</h2>
-      <div className="grid grid-cols-3 gap-4">
-        {posts.map(() => (
-          <BlogCard key={} title={} publishedAt={} description={} slug={} />
-        ))}
-      </div>
+      <div className="grid grid-cols-3 gap-4"></div>
     </section>
   );
 }
