@@ -1,7 +1,7 @@
+// content-collections.ts
 import { defineCollection, defineConfig } from "@content-collections/core";
 import { compileMDX } from "@content-collections/mdx";
-
-const posts = defineCollection({
+var posts = defineCollection({
   name: "posts",
   directory: "/posts",
   include: "**/*.mdx",
@@ -10,17 +10,19 @@ const posts = defineCollection({
     publishedAt: z.string(),
     image: z.string(),
     description: z.string(),
-    author: z.string(),
+    author: z.string()
   }),
   transform: async (document, context) => {
     const mdx = await compileMDX(context, document);
     return {
       ...document,
-      mdx,
+      mdx
     };
-  },
+  }
 });
-
-export default defineConfig({
-  collections: [posts],
+var content_collections_default = defineConfig({
+  collections: [posts]
 });
+export {
+  content_collections_default as default
+};
