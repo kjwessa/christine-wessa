@@ -17,7 +17,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <article>
       <h1 className="mb-12 text-balance text-5xl font-medium">{post.title}</h1>
-
       <div className="prose prose-lg mx-auto pb-24 pt-12">
         <MDXContent code={post.mdx} />
       </div>
