@@ -16,7 +16,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+    plugins: [require("@tailwindcss/typography")],
   safelist: ["border-green-500", "border-red-500"],
 };
 export default config;
