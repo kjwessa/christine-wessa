@@ -9,7 +9,7 @@ const posts = defineCollection({
     title: z.string(),
     slug: z.string(),
     publishedAt: z.string(),
-    image: z.string(),
+    image: z.string().optional(),
     description: z.string(),
     author: z.string(),
   }),
