@@ -7,8 +7,9 @@ const posts = defineCollection({
   include: "**/*.mdx",
   schema: (z) => ({
     title: z.string(),
+    slug: z.string(),
     publishedAt: z.string(),
-    image: z.string(),
+    image: z.string().optional(),
     description: z.string(),
     author: z.string(),
   }),
