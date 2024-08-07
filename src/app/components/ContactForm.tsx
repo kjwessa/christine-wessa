@@ -1,5 +1,6 @@
 export function ContactForm() {
   const formActionUrl = process.env.NEXT_PUBLIC_FORM_ACTION_URL;
+  const turnstileKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
   return (
     <div className="mx-auto w-full">
@@ -8,6 +9,9 @@ export function ContactForm() {
         method="POST"
         // target="_blank"
         className="space-y-4"
+        data-basin-form
+        data-basin-success-action="render"
+        data-basin-spam-protection="turnstile"
       >
         <div className="flex gap-4">
           <div className="flex-1">
@@ -95,6 +99,7 @@ export function ContactForm() {
             required
           />
         </div>
+        <div className="cf-turnstile" data-sitekey={turnstileKey}></div>
         <button
           type="submit"
           value="Submit"
@@ -103,6 +108,12 @@ export function ContactForm() {
           Send Message
         </button>
       </form>
+      <div data-basin-success-id="form-success">
+        <p>Success content here</p>
+      </div>
+      <div data-basin-error-id="form-failure">
+        <p>Failure content here</p>
+      </div>
     </div>
   );
 }
