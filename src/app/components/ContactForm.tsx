@@ -1,12 +1,12 @@
 export function ContactForm() {
-  const formActionUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_ACTION_URL;
+  const formActionUrl = process.env.NEXT_PUBLIC_FORM_ACTION_URL;
 
   return (
     <div className="mx-auto w-full">
       <form
         action={formActionUrl}
         method="POST"
-        target="_blank"
+        // target="_blank"
         className="space-y-4"
       >
         <div className="flex gap-4">
@@ -16,7 +16,7 @@ export function ContactForm() {
             </label>
             <input
               type="text"
-              name="entry.878151725"
+              name="first_name"
               placeholder="First Name"
               className="mt-1 block w-full rounded-md px-3 py-2 placeholder-gray-400 shadow-sm focus:outline-none"
               required
@@ -28,7 +28,7 @@ export function ContactForm() {
             </label>
             <input
               type="text"
-              name="entry.947208125"
+              name="last_name"
               placeholder="Last Name"
               className="mt-1 block w-full rounded-md px-3 py-2 placeholder-gray-400 shadow-sm focus:outline-none"
               required
@@ -41,7 +41,7 @@ export function ContactForm() {
           </label>
           <input
             type="email"
-            name="entry.215650103"
+            name="email"
             placeholder="name@example.com"
             className="mt-1 block w-full rounded-md px-3 py-2 placeholder-gray-400 shadow-sm focus:outline-none"
             required
@@ -53,7 +53,7 @@ export function ContactForm() {
           </label>
           <input
             type="tel"
-            name="entry.1320803298"
+            name="phone"
             placeholder="e.g. (123) 456-7890"
             className="mt-1 block w-full rounded-md px-3 py-2 placeholder-gray-400 shadow-sm focus:outline-none"
           />
@@ -65,7 +65,7 @@ export function ContactForm() {
             </label>
             <input
               type="text"
-              name="entry.1714866494"
+              name="organization"
               placeholder="Austin Women's Conference"
               className="mt-1 block w-full rounded-md px-3 py-2 placeholder-gray-400 shadow-sm focus:outline-none"
               required
@@ -77,7 +77,7 @@ export function ContactForm() {
             </label>
             <input
               type="text"
-              name="entry.441226641"
+              name="location"
               placeholder="Austin, TX"
               className="mt-1 block w-full rounded-md px-3 py-2 placeholder-gray-400 shadow-sm focus:outline-none"
               required
@@ -89,7 +89,7 @@ export function ContactForm() {
             Your Message <span className="text-red-500">*</span>
           </label>
           <textarea
-            name="entry.94188901"
+            name="message"
             placeholder="Please provide as much information as possible about your upcoming event."
             className="mt-1 block h-32 w-full rounded-md px-3 py-2 placeholder-gray-400 shadow-sm focus:outline-none"
             required
