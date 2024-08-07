@@ -1,3 +1,5 @@
+"use client";
+
 export function ContactForm() {
   const formActionUrl = process.env.NEXT_PUBLIC_FORM_ACTION_URL;
   const turnstileKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
@@ -7,11 +9,12 @@ export function ContactForm() {
       <form
         action={formActionUrl}
         method="POST"
-        // target="_blank"
         className="space-y-4"
         data-basin-form
         data-basin-success-action="render"
         data-basin-spam-protection="turnstile"
+        data-basin-success-id="form-success"
+        data-basin-error-id="form-error"
       >
         <div className="flex gap-4">
           <div className="flex-1">
@@ -108,10 +111,10 @@ export function ContactForm() {
           Send Message
         </button>
       </form>
-      <div data-basin-success-id="form-success">
+      <div id="form-success" className="hidden">
         <p>Success content here</p>
       </div>
-      <div data-basin-error-id="form-failure">
+      <div id="form-error" className="hidden">
         <p>Failure content here</p>
       </div>
     </div>
