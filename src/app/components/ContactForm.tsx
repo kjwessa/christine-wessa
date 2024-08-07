@@ -15,6 +15,7 @@ export function ContactForm() {
         data-basin-spam-protection="turnstile"
         data-basin-success-id="form-success"
         data-basin-error-id="form-error"
+        data-basin-turnstile-sitekey={turnstileKey}
       >
         <div className="flex gap-4">
           <div className="flex-1">
@@ -102,7 +103,7 @@ export function ContactForm() {
             required
           />
         </div>
-        <div className="cf-turnstile" data-sitekey={turnstileKey}></div>
+        {/* <div className="cf-turnstile" data-sitekey={turnstileKey}></div> */}
         <button
           type="submit"
           value="Submit"
