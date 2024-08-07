@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Navbar } from "@/components/Navbar";
@@ -46,8 +46,11 @@ export default function RootLayout({
           {children}
           <Footer />
           <Analytics />
-          <SpeedInsights />
         </main>
+        <Script
+          src="https://js.usebasin.com/v2.3.0.min.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
