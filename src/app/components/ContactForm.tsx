@@ -113,7 +113,8 @@ export function ContactForm() {
       </form>
       <div
         id="form-success"
-        className="mt-4 w-full rounded-md bg-green-700 p-6 text-white"
+        className="mt-4 hidden
+         w-full rounded-md bg-green-700 p-6 text-white"
       >
         <p className="text-l">
           Your message was successful submitted. Thank you for reaching out!
@@ -121,7 +122,7 @@ export function ContactForm() {
       </div>
       <div
         id="form-error"
-        className="mt-4 w-full rounded-md bg-red-800 p-6 text-white"
+        className="mt-4 hidden w-full rounded-md bg-red-800 p-6 text-white"
       >
         <p>
           Something went wrong. Please send us a message at
