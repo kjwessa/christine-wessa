@@ -103,7 +103,6 @@ export function ContactForm() {
             required
           />
         </div>
-        {/* <div className="cf-turnstile" data-sitekey={turnstileKey}></div> */}
         <button
           type="submit"
           value="Submit"
