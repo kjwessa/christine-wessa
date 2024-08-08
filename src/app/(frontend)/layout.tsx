@@ -1,6 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
-// import Head from "next/head";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Navbar } from "@/components/Navbar";
@@ -41,13 +40,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${OverusedGrotesk.variable}`}>
-      {/* <Head>
-        <script
-          src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback"
-          async
-          defer
-        ></script>
-      </Head> */}
       <body className="bg-gray-50 text-gray-800 antialiased">
         <main className="flex min-h-svh flex-col">
           <Navbar />
