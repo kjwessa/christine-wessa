@@ -111,11 +111,23 @@ export function ContactForm() {
           Send Message
         </button>
       </form>
-      <div id="form-success" className="hidden">
-        <p>Success content here</p>
+      <div
+        id="form-success"
+        className="mt-4 hidden
+         w-full rounded-md bg-green-700 p-6 text-white"
+      >
+        <p className="text-l">
+          Your message was successful submitted. Thank you for reaching out!
+        </p>
       </div>
-      <div id="form-error" className="hidden">
-        <p>Failure content here</p>
+      <div
+        id="form-error"
+        className="mt-4 hidden w-full rounded-md bg-red-800 p-6 text-white"
+      >
+        <p>
+          Something went wrong. Please send us a message at
+          bookchristinewessa.com
+        </p>
       </div>
     </div>
   );
