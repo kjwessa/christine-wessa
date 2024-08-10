@@ -89,6 +89,8 @@ export interface Post {
   id: string;
   posts: string;
   slug: string;
+  postedOn: string;
+  description: string;
   content: {
     root: {
       type: string;
