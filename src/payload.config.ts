@@ -6,6 +6,7 @@ import { buildConfig } from "payload";
 import { fileURLToPath } from "url";
 import sharp from "sharp";
 import { s3Storage } from "@payloadcms/storage-s3";
+import { BlogPosts } from "./collections/BlogPosts";
 
 import { Users } from "./collections/Users";
 import { Media } from "./collections/Media";
@@ -52,7 +53,7 @@ export default buildConfig({
   admin: {
     user: Users.slug,
   },
-  collections: [Users, Media],
+  collections: [Users, Media, BlogPosts],
   editor: lexicalEditor(),
   secret: PAYLOAD_SECRET || "",
   typescript: {
