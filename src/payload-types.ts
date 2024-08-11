@@ -67,6 +67,7 @@ export interface User {
  */
 export interface Media {
   id: string;
+  fileName?: string | null;
   alt: string;
   prefix?: string | null;
   updatedAt: string;
@@ -89,6 +90,7 @@ export interface Post {
   id: string;
   posts: string;
   slug: string;
+  mainImage?: string | Media | null;
   postedOn: string;
   description: string;
   content: {

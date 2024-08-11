@@ -27,7 +27,16 @@ export const BlogPosts: CollectionConfig = {
           "The url that appears in search engines. If you ever change this, contact Kevin first.",
       },
     },
-
+    {
+      name: "mainImage",
+      type: "upload",
+      label: "Main Image",
+      relationTo: "media",
+      admin: {
+        description:
+          "This is the image that appears on the individual post as well as the PostCard displayed around the website.",
+      },
+    },
     {
       name: "postedOn",
       type: "date",
@@ -48,6 +57,11 @@ export const BlogPosts: CollectionConfig = {
       label: "Meta Description",
       required: true,
     },
-    { name: "content", type: "richText", label: "Content", required: true },
+    {
+      name: "content",
+      type: "richText",
+      label: "Main Content",
+      required: true,
+    },
   ],
 };
