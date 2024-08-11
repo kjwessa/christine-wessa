@@ -38,5 +38,14 @@ export const Testimonials: CollectionConfig = {
           "Where is the testimonial author located? For diocesan priests it would be their Diocese and for religious it would be their Provincial.",
       },
     },
+    {
+      name: "testimonial",
+      type: "richText",
+      label: "Testimonial",
+      required: true,
+      admin: {
+        description: "Add the testimonial content here.",
+      },
+    },
   ],
 };
