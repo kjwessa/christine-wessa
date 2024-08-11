@@ -11,6 +11,7 @@ import seoPlugin from "@payloadcms/plugin-seo";
 
 import { Users } from "./collections/Users";
 import { Media } from "./collections/Media";
+import { Testimonials } from "./collections/Testimonials";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -54,7 +55,7 @@ export default buildConfig({
   admin: {
     user: Users.slug,
   },
-  collections: [Users, Media, BlogPosts],
+  collections: [Users, Media, BlogPosts, Testimonials],
   editor: lexicalEditor(),
   secret: PAYLOAD_SECRET || "",
   typescript: {

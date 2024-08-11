@@ -14,6 +14,7 @@ export interface Config {
     users: User;
     media: Media;
     posts: Post;
+    testimonials: Testimonial;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
@@ -108,6 +109,16 @@ export interface Post {
     };
     [k: string]: unknown;
   };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "testimonials".
+ */
+export interface Testimonial {
+  id: string;
+  name?: string | null;
   updatedAt: string;
   createdAt: string;
 }
