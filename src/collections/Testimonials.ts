@@ -22,9 +22,20 @@ export const Testimonials: CollectionConfig = {
       label: "Role",
       required: true,
       admin: {
-        placeholder: "Saint",
+        placeholder: "e.g. Saint",
         description:
           "The role of the individual such as Director of Marriage and Family Life or Pastor",
+      },
+    },
+    {
+      name: "diocese",
+      type: "text",
+      label: "Diocese/Provincial",
+      required: true,
+      admin: {
+        placeholder: "e.g., Diocese of Pensacola-Tallahassee",
+        description:
+          "Where is the testimonial author located? For diocesan priests it would be their Diocese and for religious it would be their Provincial.",
       },
     },
   ],

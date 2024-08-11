@@ -120,6 +120,7 @@ export interface Testimonial {
   id: string;
   name: string;
   role: string;
+  diocese: string;
   updatedAt: string;
   createdAt: string;
 }
