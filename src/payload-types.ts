@@ -118,7 +118,8 @@ export interface Post {
  */
 export interface Testimonial {
   id: string;
-  name?: string | null;
+  name: string;
+  role: string;
   updatedAt: string;
   createdAt: string;
 }
