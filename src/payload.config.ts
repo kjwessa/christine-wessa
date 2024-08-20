@@ -1,5 +1,10 @@
 // storage-adapter-import-placeholder
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
+import { payloadCloudPlugin } from "@payloadcms/plugin-cloud";
+import { formBuilderPlugin } from "@payloadcms/plugin-form-builder";
+import { nestedDocsPlugin } from "@payloadcms/plugin-nested-docs";
+import { redirectsPlugin } from "@payloadcms/plugin-redirects";
+import { seoPlugin } from "@payloadcms/plugin-seo";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
 import path from "path";
 import { buildConfig } from "payload";
@@ -7,7 +12,6 @@ import { fileURLToPath } from "url";
 import sharp from "sharp";
 import { s3Storage } from "@payloadcms/storage-s3";
 import { BlogPosts } from "./collections/BlogPosts";
-import seoPlugin from "@payloadcms/plugin-seo";
 
 import { Users } from "./collections/Users";
 import { Media } from "./collections/Media";
