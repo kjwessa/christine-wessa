@@ -3,7 +3,7 @@ import type { CollectionConfig } from "payload";
 export const BlogPosts: CollectionConfig = {
   slug: "posts",
   admin: {
-    useAsTitle: "posts",
+    useAsTitle: "name",
   },
   versions: {
     drafts: true,
@@ -15,7 +15,7 @@ export const BlogPosts: CollectionConfig = {
   },
   fields: [
     {
-      name: "posts",
+      name: "name",
       type: "text",
       label: "Name",
       required: true,
