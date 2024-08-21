@@ -89,7 +89,7 @@ export interface Media {
  */
 export interface Post {
   id: string;
-  posts: string;
+  name: string;
   slug: string;
   mainImage?: string | Media | null;
   postedOn: string;
