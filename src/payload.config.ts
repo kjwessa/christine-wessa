@@ -12,7 +12,6 @@ import { fileURLToPath } from "url";
 import sharp from "sharp";
 import { s3Storage } from "@payloadcms/storage-s3";
 import { BlogPosts } from "./collections/BlogPosts";
-
 import { Users } from "./collections/Users";
 import { Media } from "./collections/Media";
 import { Testimonials } from "./collections/Testimonials";
@@ -85,6 +84,14 @@ export default buildConfig({
         region: "auto",
         endpoint: CLOUDFLARE_ENDPOINT,
         forcePathStyle: true,
+      },
+    }),
+    seoPlugin({
+      uploadsCollection: "media",
+      fieldOverrides: {
+        title: { required: false },
+        description: { required: false },
+        image: { required: false },
       },
     }),
   ],

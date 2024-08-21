@@ -90,10 +90,7 @@ export interface Media {
 export interface Post {
   id: string;
   name: string;
-  slug: string;
   mainImage?: string | Media | null;
-  postedOn: string;
-  description: string;
   content: {
     root: {
       type: string;
@@ -109,6 +106,13 @@ export interface Post {
     };
     [k: string]: unknown;
   };
+  meta?: {
+    image?: string | Media | null;
+    title?: string | null;
+    description?: string | null;
+  };
+  postedOn: string;
+  slug: string;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
