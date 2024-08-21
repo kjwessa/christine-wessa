@@ -7,6 +7,11 @@ export const BlogPosts: CollectionConfig = {
   },
   versions: {
     drafts: true,
+    maxPerDoc: 25,
+  },
+  labels: {
+    singular: "Post",
+    plural: "Posts",
   },
   fields: [
     {
