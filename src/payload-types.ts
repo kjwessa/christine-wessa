@@ -51,6 +51,7 @@ export interface UserAuthOperations {
  */
 export interface User {
   id: string;
+  name: string;
   updatedAt: string;
   createdAt: string;
   email: string;

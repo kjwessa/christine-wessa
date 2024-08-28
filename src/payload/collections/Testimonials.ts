@@ -1,18 +1,12 @@
 import { CollectionConfig } from "payload";
+import { authenticated } from "../access/authenticated";
+import { authenticatedOrPublished } from "../access/authenticatedOrPublished";
 
 export const Testimonials: CollectionConfig = {
   slug: "testimonials",
-  versions: {
-    drafts: true,
-    maxPerDoc: 25,
-  },
-  admin: {
-    useAsTitle: "name",
-  },
-  labels: {
-    singular: "Testimonial",
-    plural: "Testimonials",
-  },
+
+  //* Field Settings
+
   fields: [
     {
       name: "name",
@@ -56,4 +50,33 @@ export const Testimonials: CollectionConfig = {
       },
     },
   ],
+
+  //* Admin Settings
+  access: {
+    create: authenticated,
+    delete: authenticated,
+    read: authenticatedOrPublished,
+    update: authenticated,
+  },
+
+  admin: {
+    description: "Kind people saying kind things about you.",
+    defaultColumns: ["name", "diocese"],
+    group: "Social Proof",
+    listSearchableFields: ["name", "diocese"],
+    pagination: {
+      defaultLimit: 25,
+      limits: [10, 25, 50],
+    },
+    useAsTitle: "name",
+  },
+  defaultSort: "name",
+  labels: {
+    singular: "Testimonial",
+    plural: "Testimonials",
+  },
+  versions: {
+    drafts: true,
+    maxPerDoc: 25,
+  },
 };

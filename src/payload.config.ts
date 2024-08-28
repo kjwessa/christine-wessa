@@ -11,10 +11,10 @@ import { buildConfig } from "payload";
 import { fileURLToPath } from "url";
 import sharp from "sharp";
 import { s3Storage } from "@payloadcms/storage-s3";
-import { BlogPosts } from "./collections/BlogPosts";
-import { Users } from "./collections/Users";
-import { Media } from "./collections/Media";
-import { Testimonials } from "./collections/Testimonials";
+import { BlogPosts } from "./payload/collections/BlogPosts";
+import { Users } from "./payload/collections/Users";
+import { Media } from "./payload/collections/Media";
+import { Testimonials } from "./payload/collections/Testimonials";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
