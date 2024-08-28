@@ -1,5 +1,4 @@
 import type { CollectionConfig } from "payload";
-
 import { authenticated } from "@/payload/access/authenticated";
 
 export const Users: CollectionConfig = {
@@ -9,6 +8,13 @@ export const Users: CollectionConfig = {
   fields: [{ name: "name", type: "text", label: "Full Name" }],
 
   //* Admin Settings
+  access: {
+    admin: authenticated,
+    create: authenticated,
+    delete: authenticated,
+    read: authenticated,
+    update: authenticated,
+  },
   admin: {
     useAsTitle: "name",
   },
