@@ -5,7 +5,7 @@ export const Users: CollectionConfig = {
   slug: "users",
 
   //* Collection Fields
-  fields: [{ name: "name", type: "text", label: "Full Name" }],
+  fields: [{ name: "name", type: "text", label: "Full Name", required: true }],
 
   //* Admin Settings
   access: {

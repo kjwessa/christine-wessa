@@ -98,6 +98,8 @@ export const BlogPosts: CollectionConfig = {
       },
     },
   ],
+
+  //* Admin Settings
   admin: {
     useAsTitle: "name",
     defaultColumns: ["name", "postedOn", "updatedAt"],
