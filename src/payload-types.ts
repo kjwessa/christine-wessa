@@ -112,7 +112,7 @@ export interface Post {
     title?: string | null;
     description?: string | null;
   };
-  postedOn: string;
+  publishedDate: string;
   slug: string;
   updatedAt: string;
   createdAt: string;

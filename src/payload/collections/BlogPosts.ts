@@ -1,4 +1,6 @@
 import type { CollectionConfig } from "payload";
+import { authenticated } from "../access/authenticated";
+import { authenticatedOrPublished } from "../access/authenticatedOrPublished";
 import {
   MetaDescriptionField,
   MetaImageField,
@@ -9,6 +11,8 @@ import {
 
 export const BlogPosts: CollectionConfig = {
   slug: "posts",
+
+  //* Collection Fields
   fields: [
     {
       type: "tabs",
@@ -18,11 +22,11 @@ export const BlogPosts: CollectionConfig = {
             {
               name: "name",
               type: "text",
-              label: "Name",
+              label: "Post Title",
               required: true,
               admin: {
                 description:
-                  "The name of the post used around the site and seen in search engines. ",
+                  "The title of the post used around the site and seen in search engines. ",
               },
             },
 
@@ -31,10 +35,6 @@ export const BlogPosts: CollectionConfig = {
               type: "upload",
               label: "Main Image",
               relationTo: "media",
-              admin: {
-                description:
-                  "This is the image that appears on the individual post as well as the PostCard displayed around the website.",
-              },
             },
             {
               name: "content",
@@ -73,7 +73,7 @@ export const BlogPosts: CollectionConfig = {
       ],
     },
     {
-      name: "postedOn",
+      name: "publishedDate",
       type: "date",
       label: "Published Date",
       required: true,
@@ -100,16 +100,30 @@ export const BlogPosts: CollectionConfig = {
   ],
 
   //* Admin Settings
+  access: {
+    create: authenticated,
+    delete: authenticated,
+    read: authenticatedOrPublished,
+    update: authenticated,
+  },
   admin: {
+    defaultColumns: ["name", "publishedDate", "updatedAt"],
+    description: "Writing brings clarity.",
+    group: "Blog Posts",
+    listSearchableFields: ["name"],
+    pagination: {
+      defaultLimit: 25,
+      limits: [10, 25, 50, 100],
+    },
     useAsTitle: "name",
-    defaultColumns: ["name", "postedOn", "updatedAt"],
+  },
+  defaultSort: "-publishedDate",
+  labels: {
+    singular: "Post",
+    plural: "Posts",
   },
   versions: {
     drafts: true,
     maxPerDoc: 25,
-  },
-  labels: {
-    singular: "Post",
-    plural: "Posts",
   },
 };
