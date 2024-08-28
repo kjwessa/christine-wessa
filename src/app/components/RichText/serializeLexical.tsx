@@ -13,16 +13,19 @@ import {
   IS_SUPERSCRIPT,
 } from "./lexicalNodeFormat";
 
+// Main function to serialize Lexical nodes into React elements
 export const serializeLexical = ({
   nodes,
 }: {
   nodes: LexicalNode[];
 }): React.ReactNode => {
   return nodes.map((node, i) => {
+    // Handle text nodes
     if (node.type === "text") {
       const textNode = node as TextNode;
       let text = <Fragment key={i}>{escapeHTML(textNode.text)}</Fragment>;
 
+      // Apply text formatting based on the format bitfield
       if (textNode.format & IS_BOLD) {
         text = <strong key={i}>{text}</strong>;
       }
@@ -48,12 +51,14 @@ export const serializeLexical = ({
       return text;
     }
 
+    // Return null for undefined nodes
     if (!node) {
       return null;
     }
 
     const elementNode = node as ElementNode;
 
+    // Handle different types of element nodes
     switch (elementNode.type) {
       case "root":
         return (
@@ -94,6 +99,7 @@ export const serializeLexical = ({
           </a>
         );
       default:
+        // Default to a paragraph if the element type is not recognized
         return (
           <p key={i}>{serializeLexical({ nodes: elementNode.children })}</p>
         );
