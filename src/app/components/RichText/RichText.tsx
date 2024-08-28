@@ -2,14 +2,13 @@ import React from "react";
 import { serializeLexical } from "./serializeLexical";
 import { LexicalNode } from "./lexicalNodeFormat";
 
-// If you have a utility for class names, import it here
-// import { cn } from '@/utilities/cn';
-
-// If you don't have the cn utility, you can use this simple function:
+// Simple utility function to concatenate class names
+// This can be replaced with a more robust solution if needed
 const cn = (...classes: (string | boolean | undefined | null)[]): string => {
   return classes.filter(Boolean).join(" ");
 };
 
+// Props interface for the RichText component
 type Props = {
   className?: string;
   content: Record<string, any>;
@@ -17,15 +16,18 @@ type Props = {
   enableProse?: boolean;
 };
 
+// RichText component for rendering Lexical content
 const RichText: React.FC<Props> = ({
   className,
   content,
   enableGutter = true,
   enableProse = true,
 }) => {
+  // Return null if no content is provided
   if (!content) {
     return null;
   }
+
   return (
     <div
       className={cn(
@@ -34,6 +36,7 @@ const RichText: React.FC<Props> = ({
         className,
       )}
     >
+      {/* Render the content if it's a valid Lexical structure */}
       {content &&
         !Array.isArray(content) &&
         typeof content === "object" &&
