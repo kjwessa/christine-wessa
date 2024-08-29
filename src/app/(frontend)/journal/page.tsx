@@ -2,6 +2,9 @@ import React from "react";
 import { getPayloadHMR } from "@payloadcms/next/utilities";
 import configPromise from "@payload-config";
 
+export const dynamic = "force-static";
+export const revalidate = 600;
+
 export default async function Page() {
   const payload = await getPayloadHMR({ config: configPromise });
   const posts = await payload.find({

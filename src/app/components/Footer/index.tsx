@@ -1,5 +1,8 @@
+import React from "react";
+import { getPayloadHMR } from "@payloadcms/next/utilities";
+import config from "@payload-config";
 import Link from "next/link";
-import socialIconsData from "../data/socialIconsData";
+import socialIconsData from "@/data/socialIconsData";
 
 export function Footer() {
   const getCurrentYear = (): number => {

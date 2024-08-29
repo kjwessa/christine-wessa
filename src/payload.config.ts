@@ -15,6 +15,8 @@ import { BlogPosts } from "./payload/collections/BlogPosts";
 import { Users } from "./payload/collections/Users";
 import { Media } from "./payload/collections/Media";
 import { Testimonials } from "./payload/collections/Testimonials";
+import { Header } from "./payload/globals/Header";
+import { Footer } from "./payload/globals/Footer";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -59,6 +61,7 @@ export default buildConfig({
     user: Users.slug,
   },
   collections: [Users, Media, BlogPosts, Testimonials],
+  globals: [Header, Footer],
   editor: lexicalEditor(),
   secret: PAYLOAD_SECRET || "",
   typescript: {
